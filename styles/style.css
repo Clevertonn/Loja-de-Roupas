@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #b6b6b6;
+}
+
+select {
+    appearance: none; /* Remove o estilo padrão do navegador */
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* Ocupa 100% da largura disponível */
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  select:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  }
+
+  /* Adicionando estilo para os <option> (limitado) */
+  option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+  }
+
+  /* Para modificar o ícone de dropdown */
+  select {
+    background-image: url('https://www.svgrepo.com/show/349579/dropdown.svg'); /* Ícone personalizado */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+  }
